@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RPS - Multiplayer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container">
+            <div class="head text-center">
+                <h1 class="ml4">
+                    <span class="letters letters-1">Rock</span>
+                    <span class="letters letters-2">Paper</span>
+                    <span class="letters letters-3">Scissors</span>
+                </h1>
+            </div>
+        </div>
+        <div class="container" id="main">
+            <div class="text-center userBoard">
+                <div class="row justify-content-center userInfo">
+                    <div class="form-inline">
+                        <input id="newUser" type="text" class="form-control mr-sm-2" placeholder="Type your name here">
+                        <button id="startButton" type="submit" class="btn btn-success">Start</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 notification"></div>
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-4">
+                    <div class="card text-center">
+                        <div class="card-header userName userName1">
+                            Waiting for Player 1
+                        </div>
+                        <div class="card-body">
+                            <img id="load" src="assets/images/load.gif">
+                            <div class="userRPS">
+
+                                <div class="userRPS1">
+                                    <div class="tool rock1" data-tool="Rock"></div>
+                                    <div class="tool paper1" data-tool="Paper"></div>
+                                    <div class="tool scissors1" data-tool="Scissors"></div>
+                                </div>
+                                <div class="toolChosen1"></div>
+                            </div>
+                            <div class="userScore1"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card text-center">
+                            <div class="card-header userName userName1">
+                                Waiting for Player 1
+                            </div>
+                            <div class="card-body">
+                                <img id="load" src="assets/images/load.gif">
+                                <div class="userRPS">
+
+                                    <div class="userRPS1">
+                                        <div class="tool rock1" data-tool="Rock"></div>
+                                        <div class="tool paper1" data-tool="Paper"></div>
+                                        <div class="tool scissors1" data-tool="Scissors"></div>
+                                    </div>
+                                    <div class="toolChosen1"></div>
+                                </div>
+                                <div class="userScore1"></div>
+                            </div>
+                        </div>
+
+                        <div class="box col-md-3 gameInfo"></div>
+
+                        <div class="box col-md-3 user2">
+                            <div class="card text-center box">
+                                <div class="card-header userName userName1">
+                                    Waiting for Player 1
+                                </div>
+                                <img id="load" src="assets/images/load.gif">
+                                <div class="userRPS">
+                                    <div class="userRPS2">
+                                        <div class="tool rock2" data-tool="Rock"></div>
+                                        <div class="tool paper2" data-tool="Paper"></div>
+                                        <div class="tool scissors2" data-tool="Scissors"></div>
+                                    </div>
+                                    <div class="toolChosen2"></div>
+                                </div>
+                                <div class="userScore2"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="messageArea col-sm-8 text-center">
+                                <div class="col-sm-12 messageHolder"></div>
+                                <div class="form-inline">
+                                    <input id="newMessage" type="text " class="form-control col-md-9 col-sm-9 mr-sm-5" placeholder="New message here ">
+                                    <button id="sendButton" type="submit" class="btn btn-primary">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+                <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>

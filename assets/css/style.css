@@ -1,0 +1,84 @@
+body {
+    background-image: url("../images/PaintSwatches_1920x1234.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ml4 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+}
+
+.ml4 .letters {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 0;
+}
+
+#load1 {
+    width: 60%;
+}
+
+#load2 {
+    width: 60%;
+}
+
+.head {
+    height: 25%;
+}
+
+#main {
+    padding-top: 12rem;
+}
+
+.letters {
+    margin-bottom: 2rem;
+}
+
+.userBoard {
+    height: 10rem;
+}
+
+.box {
+    height: 20rem;
+    text-align: center;
+    margin: 0.7rem;
+    margin-bottom: 1rem;
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.userRPS {
+    height: 8rem;
+}
+
+.tool img {
+    height: 4rem;
+}
+
+.tool:hover {
+    cursor: pointer;
+    border-left: 3px solid aqua;
+    border-right: 3px solid aqua;
+}
+
+.messageHolder {
+    height: 10rem;
+    overflow-y: scroll;
+    text-align: left;
+    line-height: 1em;
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem;
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.card-body {
+    background-color: rgba(245, 245, 245, 0.4) !important;
+}
